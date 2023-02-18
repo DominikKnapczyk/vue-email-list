@@ -22,11 +22,10 @@
 	<link rel="stylesheet" href="./css/style.css">
 
 	<!-- AXIOS CND -->
-
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.3/axios.min.js" integrity="sha512-wS6VWtjvRcylhyoArkahZUkzZFeKB7ch/MHukprGSh1XIidNvHG1rxPhyFnL73M0FC1YXPIXLRDAoOyRJNni/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 	<!-- VUE JS CND --> 
-	<script src="https://unpkg.com/vue@3"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.global.min.js"></script>
 
 	<!-- SCRIPT -->
 	<script src="./js/main.js" defer></script>
@@ -36,6 +35,13 @@
 </head>
 
 <body>
+	<div id="app" class="container">
+		<ol class="list-group list-group-numbered my-5">
+			<li class="list-group-item" v-for="(email, index) in emails"> 
+				{{emails[index]}} 
+			</li>
+		</ol>
+	</div>
 </body>
 
 </html>
